@@ -5,18 +5,13 @@ using UnityEngine.Jobs;
 
 public class PlayerController : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
-        // WTF is 0, 0, 1 ?!
-        //transform.Translate(0, 0, 1);
-        // Oh, Forward.
-        transform.Translate(Vector3.forward);
+        transform.Translate(Vector3.forward * Time.deltaTime * 20);
     }
 }
