@@ -5,10 +5,10 @@ using UnityEngine.Jobs;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed = 5.0f;
-    public float turnSpeed;
-    public float horizontalInput;
-    public float forwardInput;
+    private float speed = 5.0f;
+    private float turnSpeed = 25;
+    private float horizontalInput;
+    private float forwardInput;
     void Start()
     {
         
