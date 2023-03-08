@@ -15,6 +15,7 @@ public class FollowPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = player.transform.position;
+        // 이 오브젝트 위치를 플레이어 위치에서 7m 뒤 5m 위로 조정합니다.
+        transform.position = player.transform.position + new Vector3(0, 5, -7);
     }
 }
