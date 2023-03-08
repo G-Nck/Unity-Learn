@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Jobs;
 
 public class PlayerController : MonoBehaviour
 {
@@ -14,5 +15,6 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         // Move the vehicle forward
+        transform.Translate(0, 0, 1);
     }
 }
